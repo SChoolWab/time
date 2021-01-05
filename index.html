@@ -52,10 +52,10 @@
       setInterval(() => {
           let date = new Date();
           var output = {
-              day   : zeroPrefix( days[date.getDay()] ),
+              day   : days[date.getDay()],
               date  : zeroPrefix( date.getDate() ),
-              month : zeroPrefix( months[date.getMonth()] ),
-              year  : zeroPrefix( date.getFullYear() ),
+              month : months[date.getMonth()],
+              year  : date.getFullYear(),
               h     : zeroPrefix( hoursAmpm( date.getHours() ) ),
               m     : zeroPrefix( date.getMinutes() ),
               s     : zeroPrefix( date.getSeconds() ),
